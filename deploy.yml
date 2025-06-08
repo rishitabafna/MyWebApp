@@ -8,8 +8,4 @@
         src: '/var/snap/jenkins/4874/workspace/MyWebApp/target/MyWebApp.war'
         dest: '/opt/tomcat/webapps/MyWebApp.war'
         remote_src: no
-    - name: Restart Tomcat
-      systemd:
-        name: tomcat
-        state: restarted
 
