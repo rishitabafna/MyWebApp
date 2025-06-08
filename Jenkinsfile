@@ -22,7 +22,7 @@ pipeline{
 		stage('d'){
 			steps{
 				sh 'mvn clean package',
-				ansiblePlaybook playbook: 'deploy.yml' inventory:'hosts.ini'				
+				ansiblePlaybook playbook: 'deploy.yml', inventory:'hosts.ini'				
 			}
 		}
 	}
